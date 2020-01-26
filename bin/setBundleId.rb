@@ -3,7 +3,7 @@
 require 'rubygems'
 require 'xcodeproj'
 
-WIDGET_EXT='.TodayWidgetExtension'
+WIDGET_EXT='.AITodayWidget'
 
 if File.exist?('./bin/setBundleId.rb')
   # running from node_modules during installation

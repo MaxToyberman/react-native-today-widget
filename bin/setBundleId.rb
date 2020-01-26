@@ -3,7 +3,7 @@
 require 'rubygems'
 require 'xcodeproj'
 
-WIDGET_EXT='.widget'
+WIDGET_EXT='.TodayWidgetExtension'
 
 if File.exist?('./bin/setBundleId.rb')
   # running from node_modules during installation

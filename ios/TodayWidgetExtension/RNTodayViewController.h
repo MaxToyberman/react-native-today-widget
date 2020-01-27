@@ -11,6 +11,6 @@
 #import <React/RCTBundleURLProvider.h>
 #import <React/RCTRootView.h>
 
-@interface TodayViewController : UIViewController<RCTBridgeModule>
+@interface RNTodayViewController : UIViewController<RCTBridgeModule>
 - (UIView*) shareView;
 @end

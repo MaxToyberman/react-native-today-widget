@@ -17,11 +17,11 @@
 DisplayMode* displayMode;
 Linking* linking;
 
-@interface TodayViewController () <NCWidgetProviding>
+@interface RNTodayViewController () <NCWidgetProviding>
 
 @end
 
-@implementation TodayViewController
+@implementation RNTodayViewController
 
 - (UIView *)shareView {
     return nil;

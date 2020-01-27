@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface TodayViewController : UIViewController
+#import <React/RCTBundleURLProvider.h>
+#import <React/RCTRootView.h>
 
+@interface TodayViewController : UIViewController<RCTBridgeModule>
+- (UIView*) shareView;
 @end

@@ -8,8 +8,6 @@
 
 #import "TodayViewController.h"
 
-#import <React/RCTBundleURLProvider.h>
-#import <React/RCTRootView.h>
 #import <NotificationCenter/NotificationCenter.h>
 
 #import "DisplayMode.h"
@@ -25,14 +23,16 @@ Linking* linking;
 
 @implementation TodayViewController
 
+- (UIView *)shareView {
+    return nil;
+}
+
 - (void)loadView {
 
   NSURL *jsCodeLocation = [[RCTBundleURLProvider sharedSettings] jsBundleURLForBundleRoot:@"index.widget" fallbackResource:nil];
 
-  RCTRootView *rootView = [[RCTRootView alloc] initWithBundleURL:jsCodeLocation
-                                                      moduleName:@"TodayWidgetExtension"
-                                               initialProperties:nil
-                                                   launchOptions:nil];
+  RCTRootView *rootView = [self shareView];
+    
   rootView.backgroundColor = [[UIColor alloc] initWithRed:1 green:1 blue:1 alpha:0];
   self.view = rootView;
 
